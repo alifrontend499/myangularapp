@@ -1,0 +1,46 @@
+{
+  "city_name": "Goraya",
+  "country": "India",
+  "people": [
+    {
+      "name": "Ali",
+      "age": 21,
+      "profession": "Developer"
+    },
+    {
+      "name": "Aslam",
+      "age": 21,
+      "profession": "Dancer"
+    },
+    {
+      "name": "Jaskaran",
+      "age": 25,
+      "profession": "Developer"
+    },
+    {
+      "name": "Jaswinder",
+      "age": 28,
+      "profession": "Developer"
+    },
+    {
+      "name": "Karan",
+      "age": 22,
+      "profession": "Driver"
+    },
+    {
+      "name": "Mustak",
+      "age": 20,
+      "profession": "Singer"
+    },
+    {
+      "name": "Raman",
+      "age": 30,
+      "profession": "Compuer techniction"
+    },
+    {
+      "name": "Neha",
+      "age": 35,
+      "profession": "(unknown)"
+    }
+  ]
+}
