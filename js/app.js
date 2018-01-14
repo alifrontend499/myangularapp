@@ -1,2 +1,2 @@
-var app = angular.module('myApp', []);
-var jq = $.noConflict();
+var app = angular.module('myApp', ['ngRoute']);
+// var jq = $.noConflict();
