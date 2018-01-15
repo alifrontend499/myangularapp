@@ -7,8 +7,8 @@ app.config(['$routeProvider', function ($routeProvider) {
     templateUrl: 'views/users-details.html',
     controller: 'userDirectory'
   }).otherwise({
-    redirectTo: '/home'
-  })
+//    redirectTo: '/home'
+  });
 }]);
 
 // Defining Controller
@@ -19,7 +19,6 @@ app.controller('userDirectory', ['$scope', '$log', '$http', function ($scope, $l
     $scope.cityName = response.data.city_name;
     $scope.country = response.data.country;
     $scope.people = response.data.people;
-    // console.log($scope.country);
   });
 
   // insert more people in list
@@ -42,5 +41,5 @@ app.controller('userDirectory', ['$scope', '$log', '$http', function ($scope, $l
     if (confirmation) {
       $scope.people.splice(x, 1);
     }
-  }
+  };
 }]);

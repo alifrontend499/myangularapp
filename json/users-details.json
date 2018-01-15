@@ -8,11 +8,6 @@
       "profession": "Developer"
     },
     {
-      "name": "Aslam",
-      "age": 21,
-      "profession": "Dancer"
-    },
-    {
       "name": "Jaskaran",
       "age": 25,
       "profession": "Developer"
@@ -23,14 +18,14 @@
       "profession": "Developer"
     },
     {
-      "name": "Karan",
-      "age": 22,
-      "profession": "Driver"
+      "name": "Tanya",
+      "age": 21,
+      "profession": "Developer"
     },
     {
-      "name": "Mustak",
-      "age": 20,
-      "profession": "Singer"
+      "name": "Gurpreet",
+      "age": 25,
+      "profession": "Developer"
     },
     {
       "name": "Raman",
@@ -38,9 +33,14 @@
       "profession": "Compuer techniction"
     },
     {
-      "name": "Neha",
-      "age": 35,
-      "profession": "(unknown)"
+      "name": "Diwya",
+      "age": 25,
+      "profession": "Developer"
+    },
+    {
+      "name": "Vishal",
+      "age": 28,
+      "profession": "Developer"
     }
   ]
 }
