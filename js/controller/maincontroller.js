@@ -15,7 +15,7 @@ app.config(['$routeProvider', function ($routeProvider) {
 app.controller('userDirectory', ['$scope', '$log', '$http', function ($scope, $log, $http) {
 
   // getting json values
-  $http.get('http://localhost/myangularapp/json/users-details.json').then(function (response) {
+  $http.get('json/users-details.json').then(function (response) {
     $scope.cityName = response.data.city_name;
     $scope.country = response.data.country;
     $scope.people = response.data.people;
