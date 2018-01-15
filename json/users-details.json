@@ -5,42 +5,50 @@
     {
       "name": "Ali",
       "age": 21,
-      "profession": "Developer"
+      "profession": "Developer",
+      "userImg": "images/mal_img1.png"
     },
     {
       "name": "Jaskaran",
       "age": 25,
-      "profession": "Developer"
+      "profession": "Developer",
+      "userImg": "images/mal_img2.png"
     },
     {
       "name": "Jaswinder",
       "age": 28,
-      "profession": "Developer"
+      "profession": "Developer",
+      "userImg": "images/mal_img3.png"
     },
     {
       "name": "Tanya",
       "age": 21,
-      "profession": "Developer"
+      "profession": "Developer",
+      "userImg": "images/fem_img1.png"
     },
     {
       "name": "Gurpreet",
       "age": 25,
-      "profession": "Developer"
+      "profession": "Developer",
+      "userImg": "images/fem_img2.png"
     },
     {
       "name": "Raman",
       "age": 30,
-      "profession": "Compuer techniction"
+      "profession": "Compuer techniction",
+      "userImg": "images/mal_img4.png"
     },
     {
       "name": "Diwya",
       "age": 25,
-      "profession": "Developer"
+      "profession": "Developer",
+      "userImg": "images/fem_img3.png"
     },
     {
       "name": "Vishal",
       "age": 28,
-      "profession": "Developer"
+      "profession": "Developer",
+      "userImg": "images/mal_img5.png"
     }
   ]
 }

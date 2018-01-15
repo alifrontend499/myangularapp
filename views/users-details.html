@@ -70,7 +70,12 @@
             {{ $index + 1 }}
           </td>
           <td>
-            {{ person.name}}
+              <div class="img">
+                  <img ng-src="{{ person.userImg }}" alt="{{ person.name}}" class="img-responsive"/>
+              </div>
+              <span>
+                  {{ person.name}}
+              </span>
           </td>
           <td>
             {{ person.age }}
