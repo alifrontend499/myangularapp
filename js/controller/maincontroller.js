@@ -7,7 +7,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     templateUrl: 'views/users-details.html',
     controller: 'userDirectory'
   }).otherwise({
-//    redirectTo: '/home'
+    redirectTo: '/home'
   });
 }]);
 
@@ -37,7 +37,7 @@ app.controller('userDirectory', ['$scope', '$log', '$http', function ($scope, $l
 
   // delete Users from table
   $scope.deleteFunc = function (x) {
-    var confirmation = confirm("Are you sure you wana delete this?");
+    let confirmation = confirm("Are you sure you wana delete this?");
     if (confirmation) {
       $scope.people.splice(x, 1);
     }
