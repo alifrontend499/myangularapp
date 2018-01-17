@@ -84,3 +84,25 @@ body{
 .nav-item.active{
   background: #000;
 }
+
+/* The starting CSS styles for the enter animation */
+#main.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+#main.ng-enter.ng-enter-active {
+  opacity:1;
+}
+.table td.ng-enter,
+.table th.ng-enter{
+  transition:0.5s linear all;
+  opacity:0;
+  transform: translateY(20px);
+}
+.table td.ng-enter.ng-enter-active,
+.table th.ng-enter.ng-enter-active {
+  opacity:1;
+  transform: translateY(0);
+}
