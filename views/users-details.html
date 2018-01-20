@@ -15,7 +15,55 @@
     </div>
     <!-- order by buttons finish-->
     <!-- people table -->
-    <table class="table table-dark table-striped">
+
+<ul class="outer">
+  <li>
+    <ul class="thead">
+      <li>
+        No.
+      </li>
+      <li>
+        Name
+      </li>
+      <li>
+        Age
+      </li>
+      <li>
+        Profession
+      </li>
+      <li>
+        Action
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul class="tbody" ng-repeat="person in people | orderBy: order | filter: search">
+      <li>
+        {{ $index + 1 }}
+      </li>
+      <li>
+        <div class="img" ng-show="person.userImg">
+            <img ng-src="{{ person.userImg }}" alt="{{ person.name}}" class="img-responsive"/>
+        </div>
+        <span>
+            {{ person.name}}
+        </span>
+      </li>
+      <li>
+        {{ person.age }}
+      </li>
+      <li>
+        {{ person.profession }}
+      </li>
+      <li>
+        <a href="" ng-click="deleteFunc($index)">Delete</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+<a ng-click="deleteAllIsers()" class="btn btn-primary" style="float: right;z-index: 99999;position: relative;color: #fff;">Delete all</a>
+
+    <!-- <table class="table table-dark table-striped">
       <thead class="thead-light">
         <tr>
           <th>No.</th>
@@ -49,7 +97,7 @@
           </td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
     <!-- people table finish-->
 
   </div>

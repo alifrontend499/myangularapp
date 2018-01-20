@@ -1,17 +1,26 @@
 // navigation
-app.config(['$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+
+  $locationProvider.html5Mode(true);
+
   $routeProvider.when('/home', {
     templateUrl: 'views/homepage.html',
     controller: 'userDirectory'
   }).when('/dirlist', {
     templateUrl: 'views/users-details.html',
     controller: 'userDirectory'
+  }).when('/contact', {
+    templateUrl: 'views/contact.html',
+    controller: 'contactController'
+  }).when('/contact-success', {
+    templateUrl: 'views/contact-success.html',
+    controller: 'contactController'
   }).otherwise({
     redirectTo: '/home'
   });
 }]);
 
-// Defining Controller
+// Defining main Controller
 app.controller('userDirectory', ['$scope', '$log', '$http', function ($scope, $log, $http) {
 
   // getting json values
@@ -35,11 +44,27 @@ app.controller('userDirectory', ['$scope', '$log', '$http', function ($scope, $l
     }
   };
 
-  // delete Users from table
+  // delete User from table
   $scope.deleteFunc = function (x) {
     let confirmation = confirm("Are you sure you wana delete this?");
     if (confirmation) {
       $scope.people.splice(x, 1);
     }
   };
+  // delete alal users at once
+  $scope.deleteAllIsers = function () {
+    if ($scope.people.length >= 1) {
+      let confirmation = confirm("Are you sure you wana delete all users?");
+      if (confirmation) {
+        $scope.people = [];
+      }
+    }
+  };
 }]);
+
+// Defining main Controller
+app.controller('contactController', ['$scope', '$location', function ($scope, $location) {
+  $scope.sendMessage = function () {
+    $location.path('/contact-success');
+  }
+}])
